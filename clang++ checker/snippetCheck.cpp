@@ -1,15 +1,15 @@
-/* Author: Sai Tej Sunkara, Software Developer */
+/*
+    Author: Sai Tej Sunkara, Developer
+    Complexity: none
+*/
 #include<bits/stdc++.h>
-#define int long long int
 using namespace std;
 
-int32_t main() {
+int main() {
     #ifndef ONLINE_JUDGE
         freopen("input.txt", "r", stdin);
         freopen("output.txt", "w", stdout);
     #endif
-
-    
 
     return 0;
 }
