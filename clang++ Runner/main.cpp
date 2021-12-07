@@ -7,7 +7,9 @@ int main() {
         freopen("output.txt", "w", stdout);
     #endif
 
-
+    int n;
+    cin>>n;
+    cout<<n;
 
     return 0;
 }
