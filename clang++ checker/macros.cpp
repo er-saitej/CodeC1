@@ -1,16 +1,18 @@
 #include<bits/stdc++.h>
-#define ll long long int
+#define int long long int
 using namespace std;
 
-int main() {
+int32_t main() {
     #ifndef ONLINE_JUDGE
-        freopen("input.txt", "r", stdin);
-        freopen("output.txt", "w", stdout);
+        freopen("macrosInput.txt", "r", stdin);
+        freopen("macrosOutput.txt", "w", stdout);
     #endif
 
-    ll n = 1e18; // (1*10^18)
-    ll m = 9e18; // (9*10^18) // maximum number that can be printed in cpp
+    int n = 1e18; // (1*10^18)
+    int m = 9e18; // (9*10^18) // maximum number that can be printed in cpp
+    int maximumIntegerValue = INT_MAX; // provides maximum integer value directly without importing anything
     cout<<n<<'\n';
-    cout<<m;
+    cout<<m<<'\n';
+    cout<<maximumIntegerValue;
     return 0;
 }
