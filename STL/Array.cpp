@@ -10,7 +10,11 @@ int main() {
         freopen("input.txt", "r", stdin);
         freopen("output.txt", "w", stdout);
     #endif
+
     int arr[3]; // When array is defined, its pointer address is stored in arr
+
+    cout<<arr<<'\n'; // Prints hexadecimal value which is an address for that array
+
     int n = sizeof(arr)/sizeof(int);
 
     for(int i=0; i<n; ++i) {
