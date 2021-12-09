@@ -39,6 +39,12 @@ int32_t main() {
 
     displayArray(arr);
 
+    // For each loop
+
+    for(int value: arr) {
+        cout<< value<< " ";
+    }
+
     cerr<< ((double)clock() - initialTime)/CLOCKS_PER_SEC << '\n';
     return 0;
 }
