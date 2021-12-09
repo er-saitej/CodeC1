@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
 #include<array>
+#include<algorithm>
 using namespace std;
 
-array<int, 6> updateArray(array<int, 6> arr, int index, int value) {
+void updateArray(array<int, 6> &arr, int index, int value) { // Pass array<int, 6> &arr to change values in original array or use array<int, 6> arr to change values in a copy of an array.
     arr[index] = value;
-    return arr;
 }
 
 int32_t main() {
@@ -15,10 +15,18 @@ int32_t main() {
         freopen("error.txt", "w", stderr);
     #endif
 
-    array<int, 6> arr = {1, 2, 3, 4, 5, 6};
+    array<int, 6> arr = {1, 6, 3, 5, 4, 2};
 
     arr[0] = 10;
-    arr = updateArray(arr, 0, 100);
+    updateArray(arr, 0, 100);
+
+    for(int i=0; i<arr.size(); ++i) {
+        cout<< arr[i]<< " ";
+    }
+    
+    cout<< "\n";
+    // Sorting entire array
+    sort(arr.begin(), arr.end());
 
     for(int i=0; i<arr.size(); ++i) {
         cout<< arr[i]<< " ";
