@@ -8,7 +8,9 @@
 using namespace std;
 
 void displayVector(vector<int> vect) {
-    for(int i=0; i<vect.size(); ++i) cout<< vect.at(i)<< " ";
+    for(int value : vect) {
+        cout<< value<< " ";
+    }
     cout<< "\n";
 }
 
@@ -24,9 +26,12 @@ int32_t main() {
 
     // Doubles the size of array during runtime environment and memory will be allocated contigiously.
 
+    // When doubling of array happens, it is expensive - although it takes O(1) time.
+
     vector<int> vect;
     vector<int> vectorFill(4, 20); // Fills 4 integers with 20's
     vector<int> vectorCopy(vectorFill);
+    vectorCopy.reserve(1000);
 
     displayVector(vect);
     displayVector(vectorFill);
@@ -38,6 +43,7 @@ int32_t main() {
     cout<< vect.size()<< " - "<< vect.capacity()<< "\n";
     vect.push_back(301);
     cout<< vect.size()<< " - "<< vect.capacity()<< "\n";
+    cout<< vectorCopy.capacity()<< "\n";
 
     displayVector(vect);
 
